@@ -1710,6 +1710,10 @@
 		margin: 0 0 1.6875em 0;
 	}
 
+	.about-me {
+		font-size: 40px;
+	}
+
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -0.5em;
