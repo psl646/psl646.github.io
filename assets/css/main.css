@@ -48,6 +48,12 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.clear-fix:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2051,6 +2057,40 @@
 				display: block;
 				width: 100%;
 			}
+
+	.link-container {
+		font-size: 18px;
+	}
+
+	.link-container:hover > a {
+		display: block;
+	}
+
+	.github-link {
+		display: none;
+		float: left;
+		position: absolute;
+		background: rgb(33, 130, 193);
+		color: white;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 5px 10px;
+		top: 35%;
+		left: 20%;
+		z-index: 999;
+	}
+
+	.github-link:hover {
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background: white;
+		border: 1px solid black;
+	}
+	.live-link {
+		left: 55%;
+	}
 
 /* List */
 
