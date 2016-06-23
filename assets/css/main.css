@@ -1577,6 +1577,19 @@
 			color: rgb(33, 130, 193) !important;
 		}
 
+	.resume-link {
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: 1px solid grey;
+		transition: none;
+	}
+
+	.resume-link:hover {
+		color: white !important;
+		background: rgb(33, 130, 193) !important;
+		transition: none;
+	}
+
 	strong, b {
 		color: #777;
 		font-weight: 700;
@@ -2582,7 +2595,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../../images/new_york_city.jpg");
+		background-image: url("../../assets/images/new_york_city.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
