@@ -2058,26 +2058,40 @@
 				width: 100%;
 			}
 
-	.link-container {
+	.image-link-container {
 		font-size: 18px;
+		margin: 0 10px;
 	}
 
-	.link-container:hover > a {
+	.image-link-container:hover > div {
+		-moz-transition: display 0.2s ease-in-out;
+		-webkit-transition: display 0.2s ease-in-out;
+		-ms-transition: display 0.2s ease-in-out;
+		transition: display 0.2s ease-in-out;
 		display: block;
 	}
 
-	.github-link {
-		display: none;
-		float: left;
+	.image-link-container:hover > img {
+		opacity: 0.8;
+	}
+
+	.link-container {
 		position: absolute;
+		display: none;
+		width: 200px;
+		top: calc(50% - 18px);
+		left: calc(50% - 100px);
+		z-index: 9999;
+	}
+
+	.github-link {
+		float: left;
+		position: relative;
 		background: rgb(33, 130, 193);
 		color: white;
 		border: 1px solid black;
 		border-radius: 5px;
 		padding: 5px 10px;
-		top: 35%;
-		left: 16%;
-		z-index: 999;
 	}
 
 	.github-link:hover {
@@ -2090,11 +2104,11 @@
 	}
 
 	.live-link {
-		left: 55%;
+		float: right;
 	}
 
 	.center-link {
-		left: 33%;
+		left: calc(50% - 38px);
 	}
 
 /* List */
@@ -2110,9 +2124,8 @@
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2.25em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -2493,7 +2506,6 @@
 
 		.features article .image {
 			display: inline-block;
-			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
 		}
@@ -2506,7 +2518,7 @@
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			width: 47%;
 		}
 
 			.features article .inner > :last-child {
