@@ -2116,6 +2116,18 @@
 		left: calc(50% - 38px);
 	}
 
+	.project-title {
+		color: rgb(33, 130, 193);
+	}
+
+	.section-title {
+		color: rgb(33, 130, 193);
+	}
+
+	.makemered {
+		color: red;
+	}
+
 /* List */
 
 	ol {
