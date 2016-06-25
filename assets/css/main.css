@@ -1583,17 +1583,8 @@
 			color: rgb(33, 130, 193) !important;
 		}
 
-	.resume-link {
-		padding: 5px 10px;
-		border-radius: 5px;
-		border: 1px solid grey;
-		transition: none;
-	}
-
-	.resume-link:hover {
-		color: white !important;
-		background: rgb(33, 130, 193) !important;
-		transition: none;
+	.resume-link:hover > div {
+		display: block;
 	}
 
 	strong, b {
