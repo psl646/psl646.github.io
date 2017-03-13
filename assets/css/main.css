@@ -2217,6 +2217,7 @@
 			    z-index:1000;
 			    width:100px;
 			    border-radius:5px;
+					background: green;
 				}
 
 		ul.icons {
