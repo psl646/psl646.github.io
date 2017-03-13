@@ -518,6 +518,17 @@
 
 	};
 
+	$('ul.feature-icons li img').hover(
+			function(){
+					$(this).css('opacity','0.6');
+					var a = $(this).attr('alt');
+					$(this).parent().append('<div class="image-alt">' + a + '</div>');
+			},
+			function(){
+					$(this).css('opacity','1');
+					$(this).next().remove('.image-alt');
+			}
+	);
 	/**
 	 * Moves elements to/from the first positions of their respective parents.
 	 * @param {jQuery} $elements Elements (or selector) to move.

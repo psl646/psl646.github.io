@@ -2206,6 +2206,19 @@
 					width: 2.5em;
 				}
 
+				ul.feature-icons li img:hover {
+					cursor: pointer;
+				}
+
+				.image-alt{
+			    position:absolute;
+					font-size: 19px;
+					color: rgb(33, 130, 193);
+			    z-index:1000;
+			    width:100px;
+			    border-radius:5px;
+				}
+
 		ul.icons {
 			cursor: default;
 			list-style: none;
