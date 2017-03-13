@@ -2171,6 +2171,7 @@
 		ul.feature-icons {
 			list-style: none;
 			padding-left: 0;
+			margin-top: 30px;
 		}
 
 			ul.feature-icons li {
@@ -2208,16 +2209,6 @@
 
 				ul.feature-icons li img:hover {
 					cursor: pointer;
-				}
-
-				.image-alt{
-			    position:absolute;
-					font-size: 19px;
-					color: rgb(33, 130, 193);
-			    z-index:1000;
-			    width:100px;
-			    border-radius:5px;
-					background: green;
 				}
 
 		ul.icons {
@@ -3175,3 +3166,22 @@
 			}
 
 	}
+
+.image-alt {
+	position:absolute;
+	font-size: 19px;
+	color: rgb(33, 130, 193);
+	z-index:1000;
+	width:100px;
+	border-radius:5px;
+}
+
+.top-image-alt {
+	position:absolute;
+	font-size: 19px;
+	color: rgb(33, 130, 193);
+	z-index:1000;
+	width:100px;
+	border-radius:5px;
+	bottom: 75px;
+}

@@ -518,7 +518,20 @@
 
 	};
 
-	$('ul.feature-icons li img').hover(
+	//Adds a div to images with class name of image-alt to display alt text on hover
+	$('ul.feature-icons li img#image-top').hover(
+			function(){
+					$(this).css('opacity','0.6');
+					var a = $(this).attr('alt');
+					$(this).parent().append('<div class="top-image-alt">' + a + '</div>');
+			},
+			function(){
+					$(this).css('opacity','1');
+					$(this).next().remove('.top-image-alt');
+			}
+	);
+
+	$('ul.feature-icons li img#image-bottom').hover(
 			function(){
 					$(this).css('opacity','0.6');
 					var a = $(this).attr('alt');
@@ -529,6 +542,7 @@
 					$(this).next().remove('.image-alt');
 			}
 	);
+
 	/**
 	 * Moves elements to/from the first positions of their respective parents.
 	 * @param {jQuery} $elements Elements (or selector) to move.
